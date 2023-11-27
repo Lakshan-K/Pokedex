@@ -1,4 +1,6 @@
 body{
+    background: url("./pokemon-bg.jpg") no-repeat;
+    background-size: cover;
     font-famiy: Arial, Helvetica, sans-serif;
 }
 
@@ -8,25 +10,25 @@ body{
     border: 10px solid lightgrey;
     border-radius: 10px;
 
-    background-color: green;
     display: flex;
 
     margin: 0 auto;
     margin-top: 60px;
+
+    background: url("./pokeball.jpg") no-repeat;
+    background-size: cover;
 
 }
 
 #pokemon-info {
     width: 250px;
     height:500px;
-    background-color: cyan;
     text-align: center;
 }
 
 #pokemon-list{
     width:   250px;
     height: 500px;
-    background-color: yellow;
     font-size: 18px;
     overflow-y: auto;
 }

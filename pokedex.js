@@ -7,7 +7,14 @@ window.onload = async function() {
 
     for(let i = 1; i<= pokemonCount; i++){
         await getPokemon(i);
+        let pokemon = document.createElement("div");
+         pokemon.id = i;
+         pokemon.innerText = i.toString() + ". " + pokedex[i]["name"].toUpperCase();
+         pokemon.classList.add("pokemon-name");
+        document.getElementById("pokemon-list").append(pokemon);
     }
+
+    
 
     console.log(pokedex);
 }

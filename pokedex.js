@@ -1,5 +1,5 @@
 
-const pokemonCount = 151;
+const pokemonCount = 350;
 var pokedex = {}; // {1 : {name : "pokemon name", img, url, type : {type, type, type}, description : ...}}
 
 window.onload = async function() {

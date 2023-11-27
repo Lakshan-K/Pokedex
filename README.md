@@ -1,6 +1,6 @@
 # Pokémon Pokedex
 
-![Pokémon Pokedex Preview][https://lakshan-k.github.io/Pokemon-Pokedex/pokedex.html]
+![Pokémon Pokedex Preview]([link-to-your-project-image.jpg](https://lakshan-k.github.io/Pokemon-Pokedex/pokedex.html))
 
 Welcome to my Pokémon Pokedex! Take a nostalgic trip down memory lane with this web application that showcases 350 Pokémon using the [PokeAPI](https://pokeapi.co/).
 

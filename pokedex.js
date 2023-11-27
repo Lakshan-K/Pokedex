@@ -11,6 +11,7 @@ window.onload = async function() {
          pokemon.id = i;
          pokemon.innerText = i.toString() + ". " + pokedex[i]["name"].toUpperCase();
          pokemon.classList.add("pokemon-name");
+         pokemon.addEventListener("click", updatePokemon);
         document.getElementById("pokemon-list").append(pokemon);
     }
 
@@ -37,4 +38,24 @@ async function getPokemon(num){
     pokeDesc = pokeDesc["flavor_text_entries"][9]["flavor_text"];
 
     pokedex[num] = {"name" : pokeName, "img" : pokeImg, "types" : pokeType, "desc" : pokeDesc};
+}
+
+function updatePokemon() {
+    document.getElementById("pokemon-img").src = pokedex[this.id]["img"];
+
+    let typesDiv = document.getElementById("pokemon-types");
+    while(typesDiv.firstChild){
+        typesDiv.firstChild.remove();
+    }
+
+    let types = pokedex[this.id]["types"];
+
+    for(let i = 0; i<types.length; i++){
+        let type = document.createElement("span");
+        type.innerText = types[i]["type"]["name"].toUpperCase();
+        type.classList.add("type-box");
+        type.classList.add(types[i]["type"]["name"]); //this will add bgd colour and font colour
+        typesDiv.append(type);
+
+    }
 }
